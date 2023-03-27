@@ -5,12 +5,12 @@ import './App.css'
 import AgePannel from './components/AgePannel'
 
 function App() {
-  const [count, setCount] = useState(0)
+ const [decaAge, setDecaAge] = useState(null)
 
   return (
     <div className="App">
       <h1>How old are u?</h1>
-      <AgePannel/>
+      <AgePannel decaAge={decaAge} setDecaAge={setDecaAge} />
     </div>
   )
 }
