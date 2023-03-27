@@ -3,10 +3,11 @@ import react from "react"
 
 export default function AgePannel (props) {
 
- const {decaAge, setDecaAge} = props;
+ const {decaAge, setDecaAge, dayDisplay, setDayDisplay} = props;
     const clickHandler = (e) => {
       const ageGroup = e.target.value
       setDecaAge(ageGroup)
+      setDayDisplay(decaAge*365)
     }
     console.log(decaAge)
 
